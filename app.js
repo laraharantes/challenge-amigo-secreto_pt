@@ -41,3 +41,11 @@ function sortearAmigo() {
     const amigoSorteado = listaDeAmigos[indiceResultado];
     document.getElementById("amigoSorteado").innerHTML = "Amigo sorteado: " + amigoSorteado;
 }
+
+// Função para limpar a lista e iniciar um novo sorteio
+function limparLista() {
+    listaDeAmigos = []; // Zera o array de amigos
+    document.getElementById("listaAmigos").innerHTML = ""; // Limpa a exibição da lista
+    document.getElementById("amigoSorteado").innerHTML = ""; // Limpa o nome do sorteado
+    alert("Lista de amigos foi apagada! Você pode começar um novo sorteio.");
+}
