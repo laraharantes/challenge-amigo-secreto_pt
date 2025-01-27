@@ -39,6 +39,7 @@ function sortearAmigo() {
 
     const indiceResultado = Math.floor(Math.random() * listaDeAmigos.length);
     const amigoSorteado = listaDeAmigos[indiceResultado];
+    listaDeAmigos.splice(indiceResultado, 1);
     document.getElementById("amigoSorteado").innerHTML = "Amigo sorteado: " + amigoSorteado;
 }
 
